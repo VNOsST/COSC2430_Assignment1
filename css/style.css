@@ -79,6 +79,7 @@ html {
     height: 20%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   #check:checked ~ .navbar-links {
     display: flex;
