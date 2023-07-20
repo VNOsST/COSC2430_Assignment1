@@ -120,18 +120,17 @@ html {
   text-align: center;
   margin-bottom: 50px;
 }
-h3 {
-  padding: 20px;
-}
-h4 {
-  padding: 20px;
-  text-align: center;
-}
 .payment-gallery img {
   width: 100px;
   padding: 10px;
   display: block;
   margin: auto;
+}
+#copyright-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: white;
 }
 /* End of footer */
 
@@ -149,7 +148,6 @@ h4 {
 /* Start of breadcrumb */
 .breadcrumb {
   display: flex;
-  justify-content: center;
   margin: 20px;
 }
 .breadcrumb ul {
@@ -157,19 +155,85 @@ h4 {
   list-style: none;
 }
 .breadcrumb li {
-  padding: 10px;
-  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 .breadcrumb li a {
+  margin: 0 10px 0 10px;
   text-decoration: none;
   color: black;
 }
 .breadcrumb li + li::before {
-  padding: 10px;
   content: ">";
   color: black;
 }
 .breadcrumb li a:hover {
   border-bottom: 2px solid grey;
   color: grey;
+}
+/* Start of book details */
+.book-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-details {
+  width: 750px;
+}
+.product-details h2 {
+  margin-bottom: 20px;
+}
+.product-details p {
+  margin-top: 10px;
+}
+.product-details button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.product-details button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#price {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+}
+.smaller-gallery img {
+  width: 150px;
+  height: 200px;
+  padding-bottom: 10px;
+}
+.main-image {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+/* End of book details */
+
+/* Start of mobile book details */
+@media screen and (max-width: 800px) {
+  .book-container {
+    flex-direction: column;
+  }
+  .product-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+  }
+  .book-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-details h2 {
+    margin: 20px 0 20px 0;
+  }
 }
