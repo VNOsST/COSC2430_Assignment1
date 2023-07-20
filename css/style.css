@@ -145,3 +145,31 @@ h4 {
   }
 }
 /* End of mobile footer */
+
+/* Start of breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+}
+.breadcrumb li {
+  padding: 10px;
+  text-align: center;
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumb li + li::before {
+  padding: 10px;
+  content: ">";
+  color: black;
+}
+.breadcrumb li a:hover {
+  border-bottom: 2px solid grey;
+  color: grey;
+}
