@@ -314,6 +314,48 @@ textarea {
   margin: 0 auto;
   padding: 20px;
 }
+.product img {
+  width: 200px;
+}
+.product {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.product h2 {
+  padding: 10px;
+}
+.product:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.store-header {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+.store-header a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Start of mobile home page */
 @media screen and (max-width: 800px) {
@@ -323,6 +365,10 @@ textarea {
     max-width: 700px;
   }
   .product {
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+  }
+  .store-header {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
