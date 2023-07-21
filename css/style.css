@@ -303,3 +303,26 @@ textarea {
   }
 }
 /* End of mobile contact form */
+
+/* Start of home page */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Start of mobile home page */
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+  }
+  .product {
+    margin: 0 auto;
+  }
+}
