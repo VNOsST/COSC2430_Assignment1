@@ -332,6 +332,7 @@ textarea {
   border: none;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 .product h2 {
   padding: 10px;
