@@ -310,7 +310,7 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -336,6 +336,7 @@ textarea {
 }
 .product h2 {
   padding: 10px;
+  text-align: center;
 }
 .product:hover {
   transform: translateY(-10px);
@@ -347,7 +348,7 @@ textarea {
   color: white;
   border-radius: 30px;
   padding: 10px;
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   margin: 10px auto;
