@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
   background-color: #fff;
+  font-family: "Lato", sans-serif;
+  background-color: #18191a;
+  color: #e4e6eb;
 }
 /* Start of nav bar */
 * {
@@ -12,7 +15,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(38, 37, 38);
+  border-radius: 0 0 40px 40px;
   color: white;
 }
 .logo a img {
@@ -89,8 +93,9 @@ html {
 
 /* Start of footer*/
 .ft {
-  background-color: black;
+  background-color: rgb(38, 37, 38);
   color: white;
+  border-radius: 40px 40px 0 0;
 }
 .ft-container {
   text-align: center;
@@ -126,10 +131,12 @@ html {
   display: block;
   margin: auto;
 }
+hr {
+  color: white;
+}
 .ft h4 {
   text-align: center;
   padding: 20px;
-  background-color: #000;
   color: white;
 }
 /* End of footer */
@@ -161,11 +168,11 @@ html {
 .breadcrumb li a {
   margin: 0 10px 0 10px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .breadcrumb li + li::before {
   content: ">";
-  color: black;
+  color: white;
 }
 .breadcrumb li a:hover {
   border-bottom: 2px solid grey;
@@ -175,15 +182,20 @@ html {
 .book-container {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 .product-details {
   width: 750px;
 }
 .product-details h2 {
+  font-size: 80px;
   margin-bottom: 20px;
 }
 .product-details p {
   margin-top: 10px;
+}
+.product-details h3 {
+  text-align: center;
 }
 .product-details button {
   margin-top: 20px;
@@ -193,15 +205,22 @@ html {
   color: white;
   border: none;
   border-radius: 10px;
+  font-size: 20px;
 }
 .product-details button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-#price {
+#main-price {
   font-size: 50px;
   font-weight: bold;
-  padding: 10px;
+}
+#author {
+  font-size: 20px;
+  font-weight: bold;
+}
+#desc {
+  font-size: 20px;
 }
 .smaller-gallery img {
   width: 150px;
@@ -237,9 +256,7 @@ html {
     margin: 20px 0 20px 0;
   }
   .product-details button {
-    width: 180px;
-    height: 80px;
-    font-size: larger;
+    font-size: 30px;
   }
 }
 /* End of mobile book details */
@@ -318,13 +335,14 @@ textarea {
   width: 200px;
 }
 .product {
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px 20px 10px 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(38, 37, 38);
+  color: white;
 }
 .product button {
   background-color: red;
@@ -334,7 +352,10 @@ textarea {
   padding: 10px;
   cursor: pointer;
 }
-
+.product a {
+  text-decoration: none;
+  color: #e4e6eb;
+}
 .product h2 {
   padding: 10px;
   text-align: center;
@@ -343,11 +364,15 @@ textarea {
   transform: translateY(-10px);
   cursor: pointer;
 }
+#price {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
 .store-header {
-  border: 1px solid white;
-  background-color: black;
+  background-color: #3a3b3c;
   color: white;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px;
   max-width: 1000px;
   display: flex;
