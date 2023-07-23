@@ -33,6 +33,7 @@ html {
 .navbar-links li a {
   text-decoration: none;
   color: white;
+  font-weight: 900;
   padding: 10px;
   margin: 10px;
   display: block;
