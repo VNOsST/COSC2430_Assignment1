@@ -31,15 +31,26 @@ html {
   list-style: none;
 }
 .navbar-links li a {
+  position: relative;
   text-decoration: none;
   color: white;
   font-weight: 900;
   padding: 10px;
   margin: 10px;
-  display: block;
+  display: inline-block;
 }
-.navbar-links a:hover {
-  border-bottom: 2px solid white;
+.navbar-links li a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.25s;
+}
+.navbar-links li a:hover:after {
+  width: 100%;
 }
 .checkbtn {
   display: none;
@@ -107,14 +118,25 @@ html {
   list-style: none;
 }
 .foot-nav li a {
+  position: relative;
   text-decoration: none;
   color: white;
   padding: 10px;
   margin: 10px;
-  display: block;
+  display: inline-block;
 }
-.foot-nav a:hover {
-  border-bottom: 2px solid white;
+.foot-nav li a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.25s;
+}
+.foot-nav li a:hover:after {
+  width: 100%;
 }
 .payment_method h3 {
   text-align: center;
@@ -387,9 +409,25 @@ textarea {
   justify-content: space-between;
 }
 .store-header a {
+  position: relative;
   text-decoration: none;
   color: white;
   margin-right: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.store-header a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.25s;
+}
+.store-header a:hover:after {
+  width: 100%;
 }
 .store-header h1 {
   margin-left: 10px;
