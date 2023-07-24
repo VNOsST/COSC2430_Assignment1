@@ -11,13 +11,24 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  background-color: rgb(38, 37, 38);
+  border-radius: 0 0 40px 40px;
+  color: white;
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(38, 37, 38);
-  border-radius: 0 0 40px 40px;
-  color: white;
+}
+.category-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+.category-header img {
+  width: 100%;
 }
 .logo a img {
   width: 200px;
