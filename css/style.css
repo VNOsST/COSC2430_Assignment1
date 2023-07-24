@@ -78,10 +78,8 @@ html {
     font-size: 30px;
     color: white;
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 20px;
-    height: 22%;
+    top: 83px;
+    right: 30px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -363,6 +361,7 @@ textarea {
 }
 .product:hover {
   transform: translateY(-10px);
+  transition: 0.25s;
   cursor: pointer;
 }
 #price {
