@@ -253,6 +253,7 @@ hr {
 }
 #desc {
   font-size: 20px;
+  line-height: 1.5;
 }
 .smaller-gallery img {
   width: 150px;
@@ -263,6 +264,10 @@ hr {
   display: flex;
   justify-content: center;
   padding: 15px;
+}
+.main-image img {
+  width: 400px;
+  height: 600px;
 }
 /* End of book details */
 
