@@ -311,7 +311,7 @@ hr {
   padding-bottom: 20px;
 }
 .contact-form label {
-  text-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .contact-form h1 {
   text-align: center;
