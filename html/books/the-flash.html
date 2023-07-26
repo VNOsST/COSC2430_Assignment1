@@ -1,0 +1,184 @@
+<!---RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Ton That Huu Luan
+ID: s3958304
+Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAHASAM | The Flash</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f29bb2e29.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img
+              src="../../assets/images/logo.png"
+              alt="Logo of the Fahasam bookstore"
+          /></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sub-cat-1.html">Fiction</a></li>
+            <li><a href="../sub-cat-2.html">Non-Fiction</a></li>
+            <li><a href="../sub-cat-3.html">Comic-books</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sub-cat-2.html">Comic-books</a></li>
+          <li>
+            <a href="../sub-cat-2.html#DC">DC</a>
+          </li>
+        </ul>
+      </div>
+      <div class="book-container">
+        <div class="book-images">
+          <div class="main-image">
+            <img
+              src="../../assets/images/books/comicbooks/dc/the flash/cover.jpg"
+              alt="Image of The Flash book cover"
+            />
+          </div>
+          <div class="smaller-gallery">
+            <img
+              src="../../assets/images/books/comicbooks/dc/the flash/artwork1.png"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/comicbooks/dc/the flash/artwork2.png"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/comicbooks/dc/batman/artwork3.png"
+              alt="book image"
+            />
+          </div>
+        </div>
+        <div class="product-details">
+          <h2>The Flash: The Return of Barry Allen</h2>
+          <p id="author">By Mark Waid and Matt Hollingsworth</p>
+          <p id="main-price">15$</p>
+          <button>Add to cart</button>
+          <h3>Book description</h3>
+          <p id="desc">
+            A resurrected Barry Allen surprises Wally West by appearing at his
+            door on Christmas. The two try working together, but trouble arises
+            over sharing the identity of The Flash. The returned Barry Allen is
+            more violent than before, which leads Jay Garrick to recruit two old
+            speedsters to stop him: Johnny Quick and Max Mercury. Meanwhile, the
+            discovery of a biography of Barry leads Wally to figure out who the
+            new Barry really is: Eobard Thawne, the Reverse-Flash.
+          </p>
+        </div>
+      </div>
+      <div class="store-header">
+        <h1>Related Products</h1>
+      </div>
+      <div class="container" id="DC">
+        <div class="product">
+          <a href="crisis-on-infinite-earths.html">
+            <img
+              src="../../assets/images/books/comicbooks/dc/Crisis on Infinite Earths/cover.png"
+              alt=""
+            />
+            <h2>
+              Crisis On <br />
+              Infinite Earths
+            </h2></a
+          >
+          <p>Marv Wolfman</p>
+          <p id="price">5$</p>
+        </div>
+        <div class="product">
+          <a href="batman.html">
+            <img
+              src="../../assets/images/books/comicbooks/dc/batman/cover.jpg"
+              alt=""
+            />
+            <h2>
+              Batman: <br />
+              The Killing Joke
+            </h2></a
+          >
+          <p>Alan Moore</p>
+          <p id="price">5$</p>
+        </div>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="ft-container">
+        <nav class="foot-nav">
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms</a></li>
+            <li><a href="../copyright.html">Copyright</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="payment_method">
+          <h3>Payment methods</h3>
+          <div class="payment-gallery">
+            <img
+              src="../../assets/images/payment/Visa_Inc._logo.svg.png"
+              alt="Visa logo"
+            />
+            <img
+              src="../../assets/images/payment/Mastercard-logo.svg.png"
+              alt="Mastercard logo"
+            />
+            <img
+              src="../../assets/images/payment/MoMo_Logo.png"
+              alt="MoMo logo"
+            />
+          </div>
+        </div>
+        <div class="video">
+          <h3>Check out a review of a book selected by our curators!</h3>
+          <iframe
+            width="360"
+            height="203"
+            src="https://www.youtube.com/embed/PzE9n0rAch0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <hr />
+      <h4>Copyright © 2023 Ton That Huu Luan, FAHASAM, RMIT University</h4>
+    </footer>
+  </body>
+</html>
