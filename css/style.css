@@ -310,6 +310,9 @@ hr {
   margin: auto;
   padding-bottom: 20px;
 }
+.contact-form label {
+  text-family: "Lato", sans-serif;
+}
 .contact-form h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -327,6 +330,7 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
+  font-family: "Lato", sans-serif;
 }
 #submit {
   background-color: red;
