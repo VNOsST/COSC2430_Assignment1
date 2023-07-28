@@ -210,6 +210,15 @@ hr {
   border-bottom: 2px solid grey;
   color: grey;
 }
+/* End of breadcrumb */
+
+/* Start of mobile breadcrumb */
+@media screen and (max-width: 800px) {
+  .breadcrumb li {
+    font-size: 15px;
+  }
+}
+
 /* Start of book details */
 .book-container {
   display: flex;
@@ -289,17 +298,25 @@ hr {
     flex-direction: column;
     align-items: center;
   }
+  .main-image img {
+    width: 250px;
+    height: 400px;
+  }
   .smaller-gallery img {
-    width: 130px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     padding-bottom: 10px;
   }
   .product-details h2 {
     margin: 20px 0 20px 0;
+    font-size: 50px;
     text-align: center;
   }
   .product-details button {
     font-size: 30px;
+  }
+  #author {
+    text-align: center;
   }
 }
 /* End of mobile book details */
