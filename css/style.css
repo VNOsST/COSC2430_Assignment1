@@ -276,7 +276,6 @@ hr {
 }
 .main-image img {
   width: 400px;
-  height: 600px;
 }
 /* End of book details */
 
@@ -300,7 +299,6 @@ hr {
   }
   .main-image img {
     width: 250px;
-    height: 400px;
   }
   .smaller-gallery img {
     width: 100px;
