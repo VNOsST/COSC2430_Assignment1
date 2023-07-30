@@ -467,6 +467,7 @@ textarea {
 .store-header h1 {
   margin-left: 10px;
 }
+/* End of home page */
 
 /* Start of mobile home page */
 @media screen and (max-width: 800px) {
@@ -482,4 +483,23 @@ textarea {
     margin-left: 50px;
     margin-right: 50px;
   }
+}
+/* End of mobile home page */
+
+/* Start of legal pages */
+.legal {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.legal h2 {
+  text-align: center;
+  margin: 20px;
+}
+.legal p {
+  margin: 20px;
+}
+.legal li {
+  list-style: none;
+  margin: 20px;
 }
