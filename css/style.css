@@ -1,3 +1,14 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Ton That Huu Luan
+ID: s3958304
+Acknowledgement: 
+Hover underline animation: https://www.youtube.com/shorts/56u9BpFywq4
+Responsive nav bar: https://www.youtube.com/watch?v=oLgtucwjVII
+*/
+
 html {
   scroll-behavior: smooth;
   background-color: #fff;
@@ -73,7 +84,7 @@ header {
 /* End of nav bar */
 
 /* Start of mobile nav bar */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .checkbtn {
     display: flex;
   }
@@ -174,7 +185,7 @@ hr {
 /* End of footer */
 
 /* Start of mobile footer*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .ft-container {
     flex-direction: column;
   }
@@ -213,7 +224,7 @@ hr {
 /* End of breadcrumb */
 
 /* Start of mobile breadcrumb */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .breadcrumb li {
     font-size: 15px;
   }
@@ -280,7 +291,7 @@ hr {
 /* End of book details */
 
 /* Start of mobile book details */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .book-container {
     flex-direction: column;
   }
@@ -366,7 +377,7 @@ textarea {
 /* End of contact form */
 
 /* Start of mobile contact form */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .contact-form {
     padding: 0 20px 20px 20px;
   }
@@ -395,10 +406,11 @@ textarea {
 }
 .product img {
   width: 200px;
+  height: 300px;
 }
 .product {
   border-radius: 10px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -419,6 +431,7 @@ textarea {
   color: #e4e6eb;
 }
 .product h2 {
+  max-width: 200px;
   padding: 10px;
   text-align: center;
 }
@@ -470,7 +483,7 @@ textarea {
 /* End of home page */
 
 /* Start of mobile home page */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     justify-content: center;
