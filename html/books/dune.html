@@ -1,0 +1,188 @@
+<!---RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Ton That Huu Luan
+ID: s3958304
+Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAHASAM | Dune</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f29bb2e29.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img
+              src="../../assets/images/logo.png"
+              alt="Logo of the Fahasam bookstore"
+          /></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sub-cat-1.html">Fiction</a></li>
+            <li><a href="../sub-cat-2.html">Non-Fiction</a></li>
+            <li><a href="../sub-cat-3.html">Comic-books</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sub-cat-1.html">Fiction</a></li>
+          <li>
+            <a href="../sub-cat-1.html#sci-fi">Science Fiction</a>
+          </li>
+        </ul>
+      </div>
+      <div class="book-container">
+        <div class="book-images">
+          <div class="main-image">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Dune/cover.jpg"
+              alt="Image of Dune book cover"
+            />
+          </div>
+          <div class="smaller-gallery">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Dune/artwork1.jpg"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Dune/artwork2.jpg"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Dune/artwork3.png"
+              alt="book image"
+            />
+          </div>
+        </div>
+        <div class="product-details">
+          <h2>Dune</h2>
+          <p id="author">By Frank Herbert</p>
+          <p id="main-price">15$</p>
+          <a href="../contact.html"><button>Add to cart</button></a>
+          <h3>Book description</h3>
+          <p id="desc">
+            Dune is set in the distant future amidst a feudal interstellar
+            society in which various noble houses control planetary fiefs. It
+            tells the story of young Paul Atreides, whose family accepts the
+            stewardship of the planet Arrakis. While the planet is an
+            inhospitable and sparsely populated desert wasteland, it is the only
+            source of melange, or "spice", a drug that extends life and enhances
+            mental abilities. Melange is also necessary for space navigation,
+            which requires a kind of multidimensional awareness and foresight
+            that only the drug provides. As melange can only be produced on
+            Arrakis, control of the planet is a coveted and dangerous
+            undertaking. The story explores the multilayered interactions of
+            politics, religion, ecology, technology, and human emotion, as the
+            factions of the empire confront each other in a struggle for the
+            control of Arrakis and its spice.
+          </p>
+        </div>
+      </div>
+      <div class="store-header">
+        <h1>Related Products</h1>
+      </div>
+      <div class="container" id="sci-fi">
+        <div class="product">
+          <a href="the-martian.html">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/The Martian/cover.jpg"
+              alt=""
+          /></a>
+          <a href="the-martian.html"> <h2>The Martian</h2></a>
+          <p>Andy Weir</p>
+          <p id="price">15$</p>
+        </div>
+        <div class="product">
+          <a href="do-androids-dream-of-electric-sheep.html">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Do Androids Dream of Electric Sheep/cover.jpg"
+              alt=""
+          /></a>
+          <a href="do-androids-dream-of-electric-sheep.html">
+            <h2>
+              Do Androids Dream <br />
+              of Electric Sheep
+            </h2></a
+          >
+          <p>Philip K. Dick</p>
+          <p id="price">15$</p>
+        </div>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="ft-container">
+        <nav class="foot-nav">
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms</a></li>
+            <li><a href="../copyright.html">Copyright</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="payment_method">
+          <h3>Payment methods</h3>
+          <div class="payment-gallery">
+            <img
+              src="../../assets/images/payment/Visa_Inc._logo.svg.png"
+              alt="Visa logo"
+            />
+            <img
+              src="../../assets/images/payment/Mastercard-logo.svg.png"
+              alt="Mastercard logo"
+            />
+            <img
+              src="../../assets/images/payment/MoMo_Logo.png"
+              alt="MoMo logo"
+            />
+          </div>
+        </div>
+        <div class="video">
+          <h3>Check out a review of a book selected by our curators!</h3>
+          <iframe
+            width="360"
+            height="203"
+            src="https://www.youtube.com/embed/PzE9n0rAch0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <hr />
+      <h4>Copyright © 2023 Ton That Huu Luan, FAHASAM, RMIT University</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!---RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Ton That Huu Luan
+ID: s3958304
+Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAHASAM | Do Androids Dream of Electric Sheep</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f29bb2e29.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="logo">
+          <a href="../../index.html"
+            ><img
+              src="../../assets/images/logo.png"
+              alt="Logo of the Fahasam bookstore"
+          /></a>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../sub-cat-1.html">Fiction</a></li>
+            <li><a href="../sub-cat-2.html">Non-Fiction</a></li>
+            <li><a href="../sub-cat-3.html">Comic-books</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumb">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sub-cat-1.html">Fiction</a></li>
+          <li>
+            <a href="../sub-cat-1.html#sci-fi">Science Fiction</a>
+          </li>
+        </ul>
+      </div>
+      <div class="book-container">
+        <div class="book-images">
+          <div class="main-image">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Do Androids Dream of Electric Sheep/cover.jpg"
+              alt="Image of Do Androids Dream of Electric Sheep book cover"
+            />
+          </div>
+          <div class="smaller-gallery">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Do Androids Dream of Electric Sheep/artwork1.jpg"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Do Androids Dream of Electric Sheep/artwork2.jpg"
+              alt="book image"
+            />
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Do Androids Dream of Electric Sheep/artwork3.jpg"
+              alt="book image"
+            />
+          </div>
+        </div>
+        <div class="product-details">
+          <h2>Do Androids Dream of Electric Sheep</h2>
+          <p id="author">By Philip K. Dick</p>
+          <p id="main-price">15$</p>
+          <a href="../contact.html"><button>Add to cart</button></a>
+          <h3>Book description</h3>
+          <p id="desc">
+            Rick Deckard, a bounty hunter, plans to kill enough errant androids
+            (replicants) so he can replace his robotic sheep with a real one. In
+            the process of hunting down these slave pseudo-humans, Rick Deckard
+            falls in love with an android and learns about himself and what it
+            means to be human--and inhuman.
+          </p>
+        </div>
+      </div>
+      <div class="store-header">
+        <h1>Related Products</h1>
+      </div>
+      <div class="container" id="sci-fi">
+        <div class="product">
+          <a href="the-martian.html">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/The Martian/cover.jpg"
+              alt=""
+          /></a>
+          <a href="the-martian.html"> <h2>The Martian</h2></a>
+          <p>Andy Weir</p>
+          <p id="price">15$</p>
+        </div>
+        <div class="product">
+          <a href="dune.html">
+            <img
+              src="../../assets/images/books/fiction/sci-fi/Dune/cover.jpg"
+              alt=""
+          /></a>
+          <a href="dune.html"> <h2>Dune</h2></a>
+          <p>Frank Herbert</p>
+          <p id="price">20$</p>
+        </div>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="ft-container">
+        <nav class="foot-nav">
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms</a></li>
+            <li><a href="../copyright.html">Copyright</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="payment_method">
+          <h3>Payment methods</h3>
+          <div class="payment-gallery">
+            <img
+              src="../../assets/images/payment/Visa_Inc._logo.svg.png"
+              alt="Visa logo"
+            />
+            <img
+              src="../../assets/images/payment/Mastercard-logo.svg.png"
+              alt="Mastercard logo"
+            />
+            <img
+              src="../../assets/images/payment/MoMo_Logo.png"
+              alt="MoMo logo"
+            />
+          </div>
+        </div>
+        <div class="video">
+          <h3>Check out a review of a book selected by our curators!</h3>
+          <iframe
+            width="360"
+            height="203"
+            src="https://www.youtube.com/embed/PzE9n0rAch0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <hr />
+      <h4>Copyright © 2023 Ton That Huu Luan, FAHASAM, RMIT University</h4>
+    </footer>
+  </body>
+</html>
