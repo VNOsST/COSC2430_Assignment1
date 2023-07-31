@@ -505,6 +505,10 @@ textarea {
   margin: 0 auto;
   padding: 20px;
 }
+.legal h1 {
+  text-align: center;
+  margin: 20px;
+}
 .legal h2 {
   text-align: center;
   margin: 20px;
