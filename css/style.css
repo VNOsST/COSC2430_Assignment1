@@ -282,6 +282,10 @@ hr {
 #desc {
   font-size: 20px;
   line-height: 1.5;
+  border-radius: 20px;
+  background-color: #3a3b3c;
+  padding: 20px;
+  margin-right: 20px;
 }
 .smaller-gallery img {
   width: 50%;
