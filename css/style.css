@@ -104,8 +104,9 @@ header {
     text-align: center;
   }
   .navbar-links li a {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #3a3b3c;
   }
   .checkbtn {
     font-size: 30px;
@@ -119,6 +120,13 @@ header {
   }
   #check:checked ~ .navbar-links {
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-links li a {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3a3b3c;
   }
 }
 /* End of mobile nav bar */
@@ -276,9 +284,13 @@ hr {
   line-height: 1.5;
 }
 .smaller-gallery img {
-  width: 150px;
-  height: 200px;
-  padding-bottom: 10px;
+  width: 50%;
+  height: 250px;
+  padding: 5px;
+}
+.smaller-gallery {
+  display: flex;
+  justify-content: space-evenly;
 }
 .main-image {
   display: flex;
@@ -316,6 +328,10 @@ hr {
     height: 150px;
     padding-bottom: 10px;
   }
+  .smaller-gallery {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .product-details h2 {
     margin: 20px 0 20px 0;
     font-size: 50px;
@@ -325,6 +341,30 @@ hr {
     font-size: 30px;
   }
   #author {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #desc {
+    padding-right: 20px;
+    text-align: center;
+  }
+  .product-details h2 {
+    text-align: center;
+  }
+  .product-details a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .smaller-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  #author {
+    text-align: center;
+  }
+  #main-price {
     text-align: center;
   }
 }
@@ -392,6 +432,22 @@ textarea {
     font-size: larger;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact-form {
+    padding: 0 20px 20px 20px;
+  }
+  #submit {
+    width: 150px;
+    height: 70px;
+    font-size: larger;
+  }
+  #reset {
+    width: 150px;
+    height: 70px;
+    font-size: larger;
+  }
+}
+
 /* End of mobile contact form */
 
 /* Start of home page */
@@ -495,6 +551,11 @@ textarea {
   .store-header {
     margin-left: 50px;
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .store-header {
+    width: 700px;
   }
 }
 /* End of mobile home page */
