@@ -520,22 +520,11 @@ textarea {
   padding-bottom: 5px;
   display: inline-block;
 }
-.store-header a:after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  transition: 0.25s;
-}
-.store-header a:hover:after {
-  width: 100%;
-}
+
 .store-header h1 {
   margin-left: 10px;
 }
+
 /* End of home page */
 
 /* Start of mobile home page */
@@ -556,6 +545,21 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .store-header {
     width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .store-header a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: 0.25s;
+  }
+  .store-header a:hover:after {
+    width: 100%;
   }
 }
 /* End of mobile home page */
