@@ -92,13 +92,16 @@ header {
     display: none;
     width: 100%;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  #check:checked ~ .navbar-links {
+    display: flex;
   }
   .navbar-links ul {
     flex-direction: column;
     width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .navbar-links li {
     text-align: center;
@@ -117,9 +120,6 @@ header {
     display: flex;
     align-items: center;
     cursor: pointer;
-  }
-  #check:checked ~ .navbar-links {
-    display: flex;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
