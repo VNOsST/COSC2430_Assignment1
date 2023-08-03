@@ -220,14 +220,24 @@ hr {
   margin: 0 10px 0 10px;
   text-decoration: none;
   color: white;
+  position: relative;
 }
 .breadcrumb li + li::before {
   content: ">";
   color: white;
 }
-.breadcrumb li a:hover {
-  border-bottom: 2px solid grey;
-  color: grey;
+.breadcrumb li a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.25s;
+}
+.breadcrumb li a:hover:after {
+  width: 100%;
 }
 /* End of breadcrumb */
 
@@ -250,9 +260,6 @@ hr {
 .product-details h2 {
   font-size: 80px;
   margin-bottom: 20px;
-}
-.product-details p {
-  margin-top: 10px;
 }
 .product-details h3 {
   text-align: center;
@@ -278,14 +285,15 @@ hr {
 #author {
   font-size: 20px;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 #desc {
   font-size: 20px;
   line-height: 1.5;
   border-radius: 20px;
   background-color: #3a3b3c;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
 }
 .smaller-gallery img {
   width: 50%;
@@ -350,16 +358,18 @@ hr {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   #desc {
-    padding-right: 20px;
     text-align: center;
   }
   .product-details h2 {
     text-align: center;
   }
-  .product-details a {
+  .product-details {
     display: flex;
-    justify-content: center;
-    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-details button {
+    margin-top: 10px;
   }
   .smaller-gallery {
     flex-direction: column;
@@ -370,6 +380,9 @@ hr {
   }
   #main-price {
     text-align: center;
+  }
+  #desc {
+    margin: 15px;
   }
 }
 /* End of mobile book details */
