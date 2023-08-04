@@ -401,6 +401,11 @@ hr {
   margin-bottom: 20px;
   padding-top: 20px;
 }
+.contact-form form {
+  border-radius: 20px;
+  background-color: #3a3b3c;
+  padding: 20px;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -425,8 +430,8 @@ textarea {
 }
 #reset {
   background-color: white;
-  border: solid 2px black;
   color: black;
+  border: none;
   border-radius: 5px;
   padding: 12px 20px;
   cursor: pointer;
@@ -444,6 +449,7 @@ textarea {
     font-size: larger;
   }
   #reset {
+    margin-top: 10px;
     width: 150px;
     height: 70px;
     font-size: larger;
@@ -583,9 +589,11 @@ textarea {
 
 /* Start of legal pages */
 .legal {
+  margin: 20px auto;
   max-width: 1000px;
-  margin: 0 auto;
   padding: 20px;
+  background-color: #3a3b3c;
+  border-radius: 20px;
 }
 .legal h1 {
   text-align: center;
